@@ -46,7 +46,7 @@ npm run chat
 
 **Search**
 
-Use semantic search to get movie recommendations. For now it only gives recommendations from a list of 7 movies.
+Use semantic search to get movie recommendations. For now it only gives recommendations from a list of 7 movies, found on `movieList.js`.
 
 ```
 npm run search "cute and fluffy"
@@ -57,7 +57,7 @@ npm run search "cute and fluffy"
 Question Answering System: We have access to two unrelated sources for obtaining answers:
 
 - a [Frontend Masters podcast](https://www.youtube.com/watch?v=zR_iuq2evXo).
-- an xbox Product and Regulatory Guide, Limited Warranty & Agreement Guide PDF.
+- an Xbox Product and Regulatory Guide, Limited Warranty & Agreement Guide PDF.
 
 Based on the context of the question, the AI will determine the more appropriate source and provide a factual answer to the user's query. For example:
 
@@ -72,7 +72,7 @@ Support 2 functions:
 -Perform advanced math calculations: Calls the `calculate` function only when prompted to do math. Otherwise, it provides a normal AI-generated response.
 
 ```
-npm run functions "what is 12 * 100 / 12 +290 / 67 * 2"
+npm run functions "what is 12 * 100 / 12 + 290 / 67 * 2"
 ```
 
 -Generate an image based on a prompt: Calls the `generateImage` function when prompted to do so and returns an external URL to view it. Uses DALL·E that is integrated within OpenAi.
